@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* Header */
+.HeadSearch input {
+    display: none;
+}
+
+#exercises, #services, #tutorials, #certificates {
+    display: none;
+}
+
+@media screen and (min-width: 617px) {
+    .HeadSearch {
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        border: 1px solid gray;
+    }
+
+    .HeadSearch i {
+        margin: 3px 0px 0px -25px;
+    }
+
+    .HeadSearch input {
+        border-radius: 50px;
+        border: none;
+        padding: 8px;
+        display: block;
+        border: none;
+    }
+}
+
+@media screen and (min-width: 689px) {
+    #exercises, #services, #tutorials {
+        display: flex;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .HeadSearch {
+        border: none;
+    }
+
+    .HeadSearch input {
+        display: none;
+        border: none;
+    }
+
+    .HeadSearch i {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 829px) {
+    .HeadSearch input {
+        display: block;
+        border: 1px solid gray;
+    }
+
+    .HeadSearch i {
+        margin: 3px 0px 0px -25px;
+    }
+}
+
+@media screen and (min-width: 955px) {
+    #certificates {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1092px) {
+    #thGet {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1205px) {
+    #thSpaces {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1303px) {
+    #thJob {
+        display: flex;
+    }
+}

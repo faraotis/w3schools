@@ -1,0 +1,1131 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --AzulFundo: #282A35;
+    --AzulFundoHover: #22242d;
+    --azulClaro: #96D4D4;
+    --Yellow: #FFF4A3;
+    --YellowHover: #e6dc94;
+    --verdeEscuro: #04AA6D;
+    --verdeHover: #059862;
+    --verdeClaro: #D9EEE1;
+    --Rosa: #ffc8cf;
+    --RosaHover: #FFC0C7;
+    --gray: #444444;
+    --brancoCinza: #F3ECEA;
+    --brancoHover: #d7d7d7;
+    --cinzaFundoCode: #E7E9EB;
+    --bordaMonitor: #E3E6E8;
+    --azulCode: mediumblue;
+    --vermelhoCode: red;
+    --marromCode: brown;
+}
+
+html, body {
+    /* width: 500px; */
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#headerAll {
+    position: sticky;
+    top: 0;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+}
+
+header img {
+    width: 100%;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+.ItensHeader {
+    display: flex;
+    align-items: center;
+    padding: 0px 5px 0px 10px;
+    height: 100%;
+}
+
+.ItensHeader:hover {
+    color: white;
+    background-color: var(--verdeEscuro);
+}
+
+#headerSearch, #mudar-tema, .ItensHeader {
+    cursor: pointer;
+}
+
+#mudar-tema {
+    background-image: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.topicsHeader {
+    display: flex;
+    text-wrap: nowrap;
+    gap: 0px 4%;
+}
+
+.topicsHeader > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.topicsHeader i {
+    color: #9763F6;
+    font-size: 1.1em;
+}
+
+#thJob, #thSpaces, #thGet {
+    display: none;
+}
+
+#logar {
+    display: flex;
+    align-items: center;
+    background-color: var(--verdeClaro);
+    border-radius: 50px;
+    color: white;
+    font-size: 0.9em;
+}
+
+#login {
+    padding: 12px 15px 12px 10px;
+    border-radius: 50px;
+    background-color: var(--verdeClaro);
+    color: black;
+}
+
+#login:hover {
+    color: white;
+}
+
+#signUp {
+    padding: 12px 17px;
+    border-radius: 50px;
+    background-color: var(--verdeEscuro);
+    color: white;
+}
+
+#signUp:hover {
+    background-color: var(--verdeHover);
+}
+
+#pos-header {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+
+    
+    background-color: #282A34;
+    text-wrap: nowrap;
+    font-family: 'Source Sans Pro Topnav', sans-serif; 
+}
+
+.pos-header-div {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.pos-header-div a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.pos-header-div div {
+    padding: 10px 20px;
+}
+
+.pos-header-div div:hover {
+    background-color: black;
+}
+
+/*AVISO UNOFFICIAL*/
+#aviso-unofficial {
+    background-color: var(--AzulFundo);
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 50px 20px 0px 20px;
+}
+
+#aviso-unofficial > div {
+    padding: 10px;
+    border: 1px dashed red;
+    width: 90%;
+    margin: auto;
+}
+
+#aviso-unofficial h1 {
+    color: red;
+    margin: 20px 0px;
+    font-size: 3em;
+}
+
+#aviso-unofficial h2 {
+    margin: 10px 0px;
+}
+
+#aviso-unofficial p {
+    margin: 10px 0px;
+}
+
+#aviso-unofficial a {
+    text-decoration: none;
+    color: var(--Yellow);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    padding: 0px 3px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+#aviso-unofficial a:hover {
+    text-decoration: underline;
+    color: var(--YellowHover);
+}
+
+#site-oficial {
+    margin-top: 30px;
+}
+
+/* SECTION DE PESQUISA */
+#sectionSearch {
+    background: var(--AzulFundo) url('imagens/background_in_space.gif') repeat scroll;
+    background-size: cover;
+    padding: 105px 0px;
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+    line-height: 4.5em;
+    font-weight: bold;
+}
+
+#sectionSearch h1, #sectionSearch a  {
+    color: white;
+}
+
+#sectionSearch h1 {
+    font-size: 3em;
+}
+
+#sectionSearch p, #sectionSearch a:hover {
+    color: var(--Yellow);
+}
+
+#sectionSearch p, #sectionSearch a {
+    font-size: 1.2em;
+}
+
+#inputSearch {
+    display: flex;
+    margin: 15px 0px;
+}
+
+#inputSearch input {
+    width: 350px;
+    height: 42px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border: none;
+    padding: 0px 0px 0px 20px;
+}
+
+#inputSearch button {
+    background-color: var(--verdeEscuro);
+    color: white;
+    font-size: 2em;
+    height: 42px;
+    width: 90px;
+    border: none;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#inputSearch button:hover {
+    background-color: var(--verdeHover);
+}
+
+/* PRIMEIRO SECTION DAS LINGUAGENS */
+#secLing {
+    margin-top: -4px;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.divLing {
+    padding: 50px 20px;
+}
+
+#secLing .divLingPrinc {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    padding: 80px 0px;
+}
+
+.divLingPrinc h1 {
+    font-size: 3.5em;
+    margin-bottom: 40px;
+}
+
+#divHtml {
+    background-color: var(--verdeClaro);
+}
+
+#divCss {
+    background-color: var(--Yellow);
+}
+
+#divJs {
+    background-color: var(--AzulFundo);
+    color: white;
+}
+#divJs .buttonReferen {
+    background-color: white;
+    color: black;
+}
+#divJs .buttonReferen:hover {
+    background-color: var(--brancoHover);
+}
+
+#divJs .buttonObter {
+    color: black;
+}
+
+#divJs .divLingCode {
+    color: black;
+}
+
+#divPy {
+    background-color: var(--brancoCinza);
+}
+
+#divSql {
+    background-color: var(--azulClaro);
+}
+
+/* divCODEs */
+.divLingCode {
+    display: none;
+
+    background-color: var(--cinzaFundoCode);
+    font-weight: normal;
+    padding: 30px 30px 5px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #0000005c;
+}
+
+.divLingCode > div {
+    background-color: var(--brancoCinza);
+    border-left: 4px solid var(--verdeEscuro);
+    padding: 10px 10px 20px 10px;
+    line-height: 1.6em;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.divLingCode h1 {
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+
+.divLingCode a {
+    display: block;
+}
+
+.PaddingPySQL {
+    min-height: 212px;
+}
+
+.spanAzul {
+    color: var(--azulCode);
+}
+
+.spanMarrom {
+    color: var(--marromCode);
+}
+
+.spanVermelho {
+    color: var(--vermelhoCode);
+}
+
+/*Buttons Link*/
+.divLingPrinc a, .divLingCode a {
+    padding: 6px 0px;
+    border-radius: 50px;
+    margin: 10px 0px;
+    width: 190px;
+    text-align: center;
+    text-decoration: none;
+} 
+
+.buttonAprenda, .divLingCode a {
+    background-color: var(--verdeEscuro);
+    color: white;
+}
+.buttonAprenda:hover {
+    background-color: var(--verdeHover);
+}
+
+.buttonVideo {
+    background-color: var(--Yellow);
+    color: black;
+}
+.buttonVideo:hover {
+    background-color: var(--YellowHover);
+}
+
+.buttonReferen {
+    background-color: var(--AzulFundo);
+    color: white;
+}
+.buttonReferen:hover {
+    background-color: var(--AzulFundoHover);
+}
+
+.buttonObter {
+    background-color: var(--Rosa);
+    color: black;
+}
+.buttonObter:hover {
+    background-color: var(--RosaHover);
+}
+
+/* Segundo Section das Linguagens */
+#SecTwo-SecThree {
+    background-color: var(--AzulFundo);
+}
+
+#TwoSecLing, #ThreeSecLing {
+    background-color: var(--AzulFundo);
+    padding: 20px;
+    display: flex;
+    flex-flow: nowrap column;
+    gap: 3vw;
+}
+
+.TwoLimiter {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.TwoLimiter > div {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px 0px;
+    border-radius: 5px;
+}
+
+#TwoSecLing h1 {
+    font-size: 2.3em;
+}
+
+#TwoSecLing p {
+    color: var(--gray);
+    font-weight: bolder;
+}
+
+#TwoSecLing a {
+    background-color: var(--AzulFundo);
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 190px;
+    padding: 12px 0px;
+    border-radius: 50px;
+}
+
+#TwoPHP {
+    background-color: var(--Rosa);
+}
+#TwoJQuery {
+    background-color: var(--Yellow);
+}
+#TwoJava {
+    background-color: var(--brancoCinza);
+}
+#TwoCmais {
+    background-color: var(--verdeClaro);
+}
+#TwoW3 {
+    background-color: var(--azulClaro);
+}
+#TwoBootstrap {
+    background-color: var(--brancoCinza);
+}
+
+/* Terceiro Section das Linguagens */
+#ThreeSecLing {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#ThreeSecLing div {
+    border-radius: 5px;
+}
+
+#ThreeSecLing-Top, #ThreeSecLing-End, #ThreeSecLing-Center {
+    display: flex;
+    flex-flow: nowrap column;
+    gap: 3vw;
+}
+
+#ThreeSecLing a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0px;
+    width: 100%;
+}
+
+#ThreeSecLing-Top a {
+    width: 100%;
+    padding: 60px 0px;
+}
+
+#ThreeSecLing-End > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+#ThreeC ,#ThreeReact ,#ThreeSass ,#ThreeCanvas ,#ThreeMatplotlib, #ThreeAngular, #ThreeMongoDB,#ThreeCodeGame ,#ThreeMachineLearning {
+    background-color: var(--Rosa);
+}
+
+#ThreeCsharp ,#ThreeJson ,#ThreeIcons ,#ThreeRaspberry ,#ThreeNumPy ,#ThreeAppML ,#ThreeStatistics ,#ThreeSpaces ,#ThreeGoogleSheets {
+    background-color: var(--Yellow);
+}
+
+#ThreeR ,#ThreeVue ,#ThreeRWD ,#ThreeCyber ,#ThreePandas ,#ThreeGo ,#ThreeDataScience ,#ThreePostgreSQL,#ThreeAI {
+    background-color: var(--brancoCinza);
+}
+
+#ThreeKotlin ,#ThreeMySQL ,#ThreeGraphics ,#ThreeColors ,#ThreeSciPy ,#ThreeTypeScript ,#ThreeTypingSpeed {
+    background-color: var(--verdeClaro);
+}
+
+#ThreeNode, #ThreeXML, #ThreeSVG, #ThreeGit, #ThreeASP, #ThreeDjango, #ThreeHowTo, #ThreeExcel {
+    background-color: var(--azulClaro);
+}
+
+/* Section Editor */
+#secEditor {
+    display: flex;
+    flex-flow: nowrap column;
+    padding: 50px 20px;
+    background-color: var(--AzulFundo);
+    color: white;
+    text-align: center;
+}
+
+#secEditor h1 {
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+#secEditor p {
+    font-weight: bold;
+    padding-bottom: 70px;
+}
+
+#ImgEditor, #monitorComoFazer {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#HeaderImgEditor > div, #HeaderMonitor > div {
+    display: flex;
+    background-color: white;
+    padding: 15px;
+}
+
+#balls {
+    display: flex;
+    gap: 5px;
+    margin-right: 60px;
+}
+
+#balls > div {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #04AA6D;
+}
+
+#HeaderImgEditor p, #HeaderMonitor p {
+    color: gray;
+    font-size: 0.9em;
+    font-weight: normal;
+    padding-bottom: 0px;
+}
+
+#frontBack p {
+    color: black;
+    font-weight: bold; 
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#secEditor img {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 100%;
+}
+
+#FrontendEditor, #BackendEditor {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+}
+
+#FrontendEditor {
+    background-color: var(--verdeEscuro);
+    color: white;
+}
+
+#FrontendEditor:hover {
+    background-color: var(--verdeHover);
+}
+
+#BackendEditor {
+    background-color: var(--Yellow);
+    color: black;
+}
+
+#BackendEditor:hover {
+    background-color: var(--YellowHover);
+}
+
+/* Section Spaces */
+#secSpaces {
+    background-color: var(--AzulFundo);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#secSpaces h1 {
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+#secSpaces p {
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+
+#secSpaces p a {
+    color: var(--Rosa);
+}
+
+#secSpaces p a:hover {
+    color: var(--verdeHover);
+}
+
+#secSpaces img {
+    width: 100%;
+}
+
+#aLearnMore, #MyLearning a, #SectionPROa {
+    background-color: var(--verdeEscuro);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    width: 270px;
+    margin: 70px auto 0px auto;
+    display: block;
+    border-radius: 50px;
+}
+
+#aLearnMore:hover, #MyLearning a:hover, #SectionPROa:hover {
+    background-color: var(--verdeHover);
+}
+
+/* Section My Learning */
+#MyLearning {
+    background-color: var(--verdeClaro);
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#MyLearning h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+#MyLearning p {
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 2em;
+    margin-bottom: 10px;
+}
+
+#MyLearning img {
+    width: 100%;
+}
+
+/* Section PRO */
+#SectionPRO {
+    background-color: var(--AzulFundo);
+    color: white;
+    display: flex;
+    flex-flow: nowrap column;
+    text-align: center;
+    font-weight: bold;
+    padding: 70px 50px;
+}
+
+#SectionPRO div {
+    margin: 40px auto 0px auto;
+    display: block;
+}
+
+#SectionPRO h1 {
+    font-size: 3.7em;
+}
+
+#SectionPRO > p {
+    margin-top: 10px;
+    font-size: 1.4em;
+    color: var(--Rosa);
+}
+
+#SectionPRO div p {
+    margin-top: 10px;
+    text-align: initial;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#SectionPRO p a {
+    color: white;
+}
+
+#SectionPRO p a:hover {
+    color: var(--verdeHover);
+}
+
+#SectionPRO i {
+    color: var(--verdeClaro);
+}
+
+/* Section Color Picker */
+#secColorPicker, #secJogoDeCod, #secComoFazer {
+    padding: 100px 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#secColorPicker h1 {
+    font-size: 3.2em;
+}
+
+#secColorPicker p, #secExercicios p, #secModelos p, #secComoFazer p {
+    font-weight: bold;
+    line-height: 1.7em;
+}
+
+#divHoverPicker {
+    width: 155px;
+    height: 140px;
+    margin-top: -165px;
+}
+
+#divHoverPicker:hover {
+    background-color: #ffffff5a;
+}
+
+/* Jogo de código */
+#secJogoDeCod {
+    background-color: var(--azulClaro);
+    padding: 70px 10px;
+    gap: 10px;
+}
+
+#secJogoDeCod h1 {
+    font-size: 3.5em;
+    font-family: 'Freckle Face', system-ui;
+}
+
+#secJogoDeCod p {
+    font-size: 2em;
+    font-family: 'Freckle Face', system-ui;
+}
+
+#divHoverJogo {
+    width: 155px;
+    height: 205px;
+    margin-top: -210px;
+}
+
+#divHoverJogo:hover {
+    background-color: #96d4d470;
+}
+
+#aJogoDeCod, #secModelos a, #secPontape a, #baseMonitor a {
+    background-color: var(--AzulFundo);
+    color: white;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#aJogoDeCod:hover, #secModelos a:hover {
+    background-color: black;
+}
+
+/* Exercícios e questionários */
+#secExercicios, #secPontape {
+    background-color: var(--AzulFundo);
+    color: white;
+    padding: 70px 45px;
+    display: flex;
+    flex-flow: nowrap column;
+    text-align: center;
+    gap: 30px;
+}
+
+#secExercicios h1, #secComoFazer h1 {
+    font-size: 4em;
+    line-height: 1.5em;
+}
+
+#divExercicios {
+    display: flex;
+    flex-flow: nowrap column;
+    gap: 30px;
+}
+
+#secExercicios a {
+    width: 100%;
+    height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#aExer1 {
+    background-color: var(--verdeEscuro);
+    color: white;
+}
+#aExer1:hover, #baseMonitor a:hover {
+    background-color: var(--verdeHover);
+}
+#aExer2 {
+    background-color: var(--Yellow);
+    color: black;
+}
+#aExer2:hover {
+    background-color: var(--YellowHover);
+}
+
+/* Modelos da Web */
+#secModelos {
+    padding: 70px 45px;
+    display: flex;
+    flex-flow: nowrap column;
+    text-align: center;
+    gap: 30px;
+}
+
+#secModelos h1 {
+    font-size: 3.2em;
+}
+
+#secModelos a {
+    padding: 25px 40px;
+}
+
+/* Dê o pontapé */
+#secPontape {
+    gap: 60px;
+}
+
+#secPontape p, #secPontape h1 {
+    color: var(--Rosa);
+    font-weight: bold;
+    font-size: 2.4em;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+#secPontape h1 {
+    font-size: 3em;
+}
+
+#secPontape a {
+    padding: 22px 0px;
+    background-color: var(--verdeEscuro);
+}
+
+#secPontape a:hover {
+    background-color: var(--verdeHover);
+}
+
+/* Como fazer a seção */
+#secComoFazer {
+    text-align: center;
+}
+
+#HeaderMonitor > div {
+    background-color: #fcfcfc;
+}
+
+#HeaderMonitor p {
+    font-weight: normal;
+}
+
+#pComoFazer {
+    font-size: 0.9em;
+}
+
+#BordaMonitor {
+    background-color: var(--bordaMonitor);
+    padding: 5px 5px 80px 5px;
+}
+
+#hasteMonitor {
+    margin: auto;
+    background-color: var(--AzulFundo);
+    height: 60px;
+    width: 50px;
+}
+
+#baseMonitor a {
+    max-width: 430px;
+    margin: -10px auto 0px auto;
+    display: block;
+    padding: 20px 0px;
+}
+
+/* SLIDE */
+.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input {
+    display: none;
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img {
+    width: 100%;
+}
+
+.nav-auto {
+    margin: 36% 0px 0px -15px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual {
+    opacity: 0%;
+    margin: 36% 0px 0px -15px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div {
+    border: 1px solid transparent;
+    background-color: lightgray;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: gray;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3 {
+    background-color: gray;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro {
+    margin-left: -50%;
+}
+
+/* Footer */
+footer {
+    background: var(--AzulFundo) url('imagens/background_in_space.gif') repeat scroll;
+    color: white;
+    text-align: center;
+}
+
+footer > div {
+    padding: 80px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+#FooterSectOne ul {
+    display: flex;
+    flex-direction: column;
+    color: var(--Yellow);
+    font-weight: bold;
+    line-height: 3em;
+}
+
+#FooterSectOne a {
+    text-decoration: none;
+    color: var(--Yellow);
+}
+
+#FooterSectOne a:hover {
+    text-decoration: underline;
+}
+
+#FooterTopicos {
+    font-weight: bold;
+    font-size: 0.9em;
+    line-height: 1.2em;
+}
+
+#FooterTopicos > div {
+    margin: 30px 0px;
+}
+
+#FooterTopicos h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+#FooterTopicos a {
+    text-decoration: none;
+    color: white;
+}
+
+#FooterTopicos a:hover {
+    color: var(--Yellow);
+}
+
+#FooterFim {
+    padding-top: 40px;
+}
+
+#FooterRedes img {
+    width: 20px;
+}
+
+#FooterRedes > ul {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    gap: 20px;
+}
+
+#FooterFim p {
+    font-size: 0.7em;
+    margin-top: 15px;
+}
+
+#FooterFim a {
+    color: white;
+}
+
+#FooterFim a:hover {
+    color: var(--Yellow);
+}
+
+#FooterImgFundo {
+    height: 350px;
+    background: transparent url('imagens/lynx_landing.png') no-repeat center bottom scroll;
+    background-size: cover;
+}

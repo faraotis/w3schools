@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste - W3Schools (NÃO É OFICIAL)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="arquivos/style.css">
+    <link rel="stylesheet" href="arquivos/mediaqueryHeader.css">
+    <link rel="stylesheet" href="arquivos/mediaqueryLing.css">
+</head>
+<body>
+    <div id="headerAll">
+        <header>
+            <a href="#">
+                <img src="arquivos/imagens/logo-w3schools.png" alt="logo-w3schools">
+            </a>
+            <div class="ItensHeader" id="menu">
+                <div>Menu</div>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+            <div class="ItensHeader" id="tutorials">
+                <div>Tutoriais</div>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+            <div class="ItensHeader" id="exercises">
+                <div>Exercícios</div>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+            <div class="ItensHeader" id="certificates">
+                <div>Certificados</div>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+            <div class="ItensHeader" id="services">
+                <div>Serviços</div>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+            <div class="HeadSearch">
+                <input type="search" name="Search" id="input-search" placeholder="Search...">
+                <label for="input-search">
+                    <i class="material-icons" id="headerSearch">
+                        search
+                    </i>
+                </label>
+            </div>
+            <div id="mudar-tema">
+                <!--conteudo nas CSS-->
+            </div>
+            <div class="topicsHeader">
+                <div id="thJob">
+                    <i class="material-icons">local_mall</i>
+                    <div>Jobs</div>
+                </div>
+                <div id="thSpaces">
+                    <i class="material-icons">code</i>
+                    <div>Spaces</div>
+                </div>
+                <div id="thGet">
+                    <i class="material-icons">shopping_cart</i>
+                    <div>Get Certified</div>
+                </div>
+            </div>
+            <form id="logar" onclick="logarHover()">
+                <a href="#" id="signUp">
+                    Sign Up
+                </a>
+                <a href="#" id="login" onclick="loginHover()">
+                    Log in
+                </a>
+            </form>
+        </header>
+        <div id="pos-header">
+            <div class="pos-header-div">
+                <div><a href="#">HTML</a></div>
+                <div><a href="#">CSS</a></div>
+                <div><a href="#">JAVASCRIPT</a></div>
+                <div><a href="#">SQL</a></div>
+                <div><a href="#">PYTHON</a></div>
+                <div><a href="#">JAVA</a></div>
+                <div><a href="#">PHP</a></div>
+                <div><a href="#">HOW TO</a></div>
+                <div><a href="#">W3.CSS</a></div>
+                <div><a href="#">C</a></div>
+                <div><a href="#">C++</a></div>
+                <div><a href="#">C#</a></div>
+                <div><a href="#">BOOTSTRAP</a></div>
+                <div><a href="#">REACT</a></div>
+                <div><a href="#">MYSQL</a></div>
+                <div><a href="#">JQUERY</a></div>
+                <div><a href="#">EXCEL</a></div>
+                <div><a href="#">XML</a></div>
+                <div><a href="#">DJANGO</a></div>
+                <div><a href="#">NODEJS</a></div>
+                <div><a href="#">R</a></div>
+                <div><a href="#">TYPESCRIPT</a></div>
+                <div><a href="#">ANGULAR</a></div>
+                <div><a href="#">GIT</a></div>
+                <div><a href="#">POSTGRESQL</a></div>
+                <div><a href="#">MONGODB</a></div>
+                <div><a href="#">ASP</a></div>
+                <div><a href="#">AWS</a></div>
+                <div><a href="#">AI</a></div>
+                <div><a href="#">GO</a></div>
+                <div><a href="#">KOTLIN</a></div>
+                <div><a href="#">SASS</a></div>
+                <div><a href="#">VUE</a></div>
+                <div><a href="#">GEN AI</a></div>
+                <div><a href="#">CIBERSECURITY</a></div>
+                <div><a href="#">DATA SCIENCE</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="aviso-unofficial">
+        <div>
+            <h1>
+                AVISO!
+            </h1>
+            <h2>
+                Este site NÃO É OFICIAL!
+            </h2>
+            <p>
+                Este site é apenas uma demonstração de como desenvolvo sites com HTML e CSS. No momento, desenvolvi o site adaptativo até <a href="#aqui">AQUI</a>.
+            </p>
+            <p>
+                Este site foi desenvolvido por <a href="https://github.com/faraotis">FARAOTIS</a>.
+            </p>
+            <p id="site-oficial">
+                Visite o site oficial <a href="https://www.w3schools.com/">w3schools</a>.
+            </p>
+        </div>
+    </div>
+    <section id="sectionSearch">
+        <h1>Aprenda a codificar</h1>
+        <p>Com o maior site de desenvolvedores do mundo</p>
+        <form id="inputSearch">
+            <input style="font-size: 0.9em; font-weight: bold;" type="search" name="" id="" placeholder="Pesquise nossos tutoriais, por exemplo HTML
+            ">
+            <button type="button">
+                <i class="material-icons">search</i>
+            </button>
+        </form>
+        <a href="#">Não sabe por onde começar?</a>
+    </section>
+    <svg style="background-color:#D9EEE1;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+    </svg>
+    <section id="secLing">
+        <div>
+            <div class="divLing" id="divHtml">
+                <div class="divLingPrinc">
+                    <h1>HTML</h1>
+                    <p>
+                        A linguagem para construir páginas da web
+                    </p>
+                    <a href="#" class="buttonAprenda">Aprenda HTML</a>
+                    <a href="#" class="buttonVideo">Video Tutorial</a>
+                    <a href="#" class="buttonReferen">Referência HTML</a>
+                    <a href="#" class="buttonObter">Obter certificação</a>
+                </div>
+                <div class="divLingCode">
+                    <h1>HTML Example:</h1>
+                    <div>
+                        <span>
+                            <span class="spanAzul">&lt;</span><span class="spanMarrom">!DOCTYPE</span><span class="spanVermelho"> html</span><span class="spanAzul">&gt;</span>
+                        </span><br>
+                        <span>
+                            <span class="spanAzul">&lt;</span><span class="spanMarrom">html</span><span class="spanAzul">&gt;</span>
+                        </span><br>
+                        <span>
+                            <span class="spanAzul">&lt;</span><span class="spanMarrom">head</span><span class="spanAzul">&gt;</span>
+                        </span><br>
+                        <span>
+                            <span class="spanAzul">&lt;</span><span class="spanMarrom">title</span><span class="spanAzul">&gt;</span>HTML Tutorial<span class="spanAzul">&lt;</span>/<span class="spanMarrom">title</span>&gt;</span><br>
+                        <span>
+                            <span class="spanAzul">&lt;</span><span class="spanMarrom">/head</span><span class="spanAzul">&gt;</span>
+                        </span><br>
+                        <span>
+                            <span class="spanAzul">&lt;</span><span class="spanMarrom">body</span><span class="spanAzul">&gt;</span>
+                        </span><br>
+                        <br>
+                        <span>
+                            <span class="spanAzul">&lt;</span><span class="spanMarrom">h1</span><span class="spanAzul">&gt;</span>This is a heading<span class="spanAzul">&lt;</span><span class="spanMarrom">/h1</span><span class="spanAzul">&gt;</span>
+                        </span><br>
+                        <span>
+                            <span class="spanAzul">&lt;</span><span class="spanMarrom">p</span><span class="spanAzul">&gt;</span>This is a paragraph.<span class="spanAzul">&lt;</span><span class="spanMarrom">/p</span><span class="spanAzul">&gt;</span>
+                        </span><br>
+                        <br>
+                        <span>
+                            <span class="spanAzul">&lt;</span><span class="spanMarrom">/body</span><span class="spanAzul">&gt;</span>
+                        </span><br>
+                        </span>
+                            <span class="spanAzul">&lt;</span><span class="spanMarrom">/html</span><span class="spanAzul">&gt;</span>
+                        </span>
+                    </div>
+                    <a href="#">Try it Yourself</a>
+                </div>
+            </div>
+            <div class="divLing" id="divCss">
+                <div class="divLingPrinc">
+                    <h1>CSS</h1>
+                    <p>
+                        A linguagem para estilizar páginas da web
+                    </p>
+                    <a href="#" class="buttonAprenda">Aprenda CSS</a>
+                    <a href="#" class="buttonReferen">Referência CSS</a>
+                    <a href="#" class="buttonObter">Obter certificação</a>
+                </div>
+                <div class="divLingCode">
+                    <h1>CSS Example:</h1>
+                    <div>
+                        <span><span class="spanMarrom">body</span> {</span><br>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanVermelho">background-color</span>: <span class="spanAzul">lightblue</span>;</span><br>
+                        <span>}</span> <br>
+                        <br>
+                        <span><span class="spanMarrom">h1</span> {</span><br>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanVermelho">color</span>: <span class="spanAzul">white</span>;</span><br>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanVermelho">text-align</span>: <span class="spanAzul">center</span>;</span><br>
+                        <span>}</span><br>
+                        <br>
+                        <span><span class="spanMarrom">p</span> {</span><br>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanVermelho">font-family</span>: <span class="spanAzul">verdana</span>;</span><br>
+                        <span>}</span>
+                    </div>
+                    <a href="#">Try it Yourself</a>
+                </div>
+            </div>
+            <div class="divLing" id="divJs">
+                <div class="divLingPrinc">
+                    <h1>JavaScript</h1>
+                    <p>
+                        A linguagem para programar páginas da web
+                    </p>
+                    <a href="#" class="buttonAprenda">Aprenda JavaScript</a>
+                    <a href="#" class="buttonReferen">Referência JavaScript</a>
+                    <a href="#" class="buttonObter">Obter certificação</a>
+                </div>
+                <div class="divLingCode">
+                    <h1>JavaScript Example:</h1>
+                    <div>
+                        <span><span class="spanAzul">&lt;</span><span class="spanMarrom">button</span> <span class="spanVermelho">onclick</span><span class="spanAzul">="myFunction()"&gt;</span>Click Me!<span class="spanAzul">&lt;</span><span class="spanMarrom">/button</span><span class="spanAzul">&gt;</span></span><br>
+                        <br>
+                        <span><span class="spanAzul">&lt;</span><span class="spanMarrom">script</span><span class="spanAzul">&gt;</span></span><br>
+                        <span><span class="spanAzul">function</span> myFunction() {</span><br>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanAzul">let</span> x = document.getElementById(<span class="spanMarrom">"demo"</span>);</span><br>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;x.style.fontSize = <span class="spanMarrom">"25px"</span>;</span><br>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;x.style.color = <span class="spanMarrom">"red"</span>;</span><br>
+                        <span>}</span><br>
+                        <span><span class="spanAzul">&lt;</span><span class="spanMarrom">/script</span><span class="spanAzul">&gt;</span></span>
+                    </div>
+                    <a href="#">Try it Yourself</a>
+                </div>
+            </div>
+            <div class="divLing" id="divPy">
+                <div class="divLingPrinc">
+                    <h1>Python</h1>
+                    <p>
+                        Uma linguagem de programação popular
+                    </p>
+                    <a href="#" class="buttonAprenda">Aprenda Python</a>
+                    <a href="#" class="buttonReferen">Referência Python</a>
+                    <a href="#" class="buttonObter">Obter certificação</a>
+                </div>
+                <div class="divLingCode">
+                    <h1>Python Example:</h1>
+                    <div class="PaddingPySQL">
+                        <span><span class="spanAzul">if</span> <span class="spanVermelho">5</span> &gt; <span class="spanVermelho">2</span>:</span><br>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;print(<span class="spanMarrom">"Five is greater than two!"</span>)</span>
+                    </div>
+                    <a href="#">Try it Yourself</a>
+                </div>
+            </div>
+            <div class="divLing" id="divSql">
+                <div id="divLimit">
+                    <div class="divLingPrinc">
+                        <h1>SQL</h1>
+                        <p>
+                            Uma linguagem para acessar bancos de dados
+                        </p>
+                        <a href="#" class="buttonAprenda">Aprenda SQL</a>
+                        <a href="#" class="buttonReferen">Referência SQL</a>
+                        <a href="#" class="buttonObter">Obter certificação</a>
+                    </div>
+                    <div class="divLingCode">
+                        <h1>SQL Example:</h1>
+                        <div class="PaddingPySQL">
+                            <span><span class="spanAzul">SELECT</span> * <span class="spanAzul">FROM</span> Customers</span><br>
+                            <span><span class="spanAzul">WHERE</span> Country=<span class="spanMarrom">'Mexico'</span>;</span>
+                        </div>
+                        <a href="#">Try it Yourself</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="SecTwo-SecThree">
+        <div id="TwoSecLing">
+            <div class="TwoLimiter">
+                <div id="TwoPHP">
+                    <h1>PHP</h1>
+                    <p>
+                        A web server programming language
+                    </p>
+                    <a href="#">Learn PHP</a>
+                </div>
+                <div id="TwoJQuery">
+                    <h1>jQuery</h1>
+                    <p>
+                        A JS library for developing web pages
+                    </p>
+                    <a href="#">Learn jQuery</a>
+                </div>
+            </div>
+            <div class="TwoLimiter">
+                <div id="TwoJava">
+                    <h1>Java</h1>
+                    <p>
+                        A programming language
+                    </p>
+                    <a href="#">Learn Java</a>
+                </div>
+                <div id="TwoCmais">
+                    <h1>C++</h1>
+                    <p>
+                        A programming language
+                    </p>
+                    <a href="#">Learn C++</a>
+                </div>
+            </div>
+            <div class="TwoLimiter">
+                <div id="TwoW3">
+                    <h1>W3.CSS</h1>
+                    <p>
+                        A CSS framework for faster and better responsive web pages
+                    </p>
+                    <a href="#">Learn W3.CSS</a>
+                </div>
+                <div id="TwoBootstrap">
+                    <h1>Bootstrap</h1>
+                    <p>
+                        A CSS framework for designing better web pages
+                    </p>
+                    <a href="#">Learn Bootstrap</a>
+                </div>
+            </div>
+        </div>
+        <div id="aqui"><!-- Demarcador de Desenvolvimento --></div>
+        <div id="ThreeSecLing">
+            <div id="ThreeSecLing-Top">
+                <div id="ThreeC">
+                    <a href="#">C</a>
+                </div>
+                <div id="ThreeCsharp">
+                    <a href="#">C#</a>
+                </div>
+            </div>
+            <div id="ThreeSecLing-Center">
+                <div id="ThreeR">
+                    <a href="#">R</a>
+                </div>
+                <div id="ThreeKotlin">
+                    <a href="#">Kotlin</a>
+                </div>
+                <div id="ThreeNode">
+                    <a href="#">Node.js</a>
+                </div>
+                <div id="ThreeReact">
+                    <a href="#">React</a>
+                </div>
+                <div id="ThreeJson">
+                    <a href="#">JSON</a>
+                </div>
+                <div id="ThreeVue">
+                    <a href="#">Vue</a>
+                </div>
+                <div id="ThreeMySQL">
+                    <a href="#">MySQL</a>
+                </div>
+                <div id="ThreeXML">
+                    <a href="#">XML</a>
+                </div>
+                <div id="ThreeSass">
+                    <a href="#">Sass</a>
+                </div>
+                <div id="ThreeIcons">
+                    <a href="#">Icons</a>
+                </div>
+                <div id="ThreeRWD">
+                    <a href="#">RWD</a>
+                </div>
+                <div id="ThreeGraphics">
+                    <a href="#">Graphics</a>
+                </div>
+                <div id="ThreeSVG">
+                    <a href="#">SVG</a>
+                </div>
+                <div id="ThreeCanvas">
+                    <a href="#">Canvas</a>
+                </div>
+                <div id="ThreeRaspberry">
+                    <a href="#">Raspberry Pi</a>
+                </div>
+                <div id="ThreeCyber">
+                    <a href="#">Cyber Security</a>
+                </div>
+                <div id="ThreeColors">
+                    <a href="#">Colors</a>
+                </div>
+                <div id="ThreeGit">
+                    <a href="#">Git</a>
+                </div>
+                <div id="ThreeMatplotlib">
+                    <a href="#">Matplotlib</a>
+                </div>
+                <div id="ThreeNumPy">
+                    <a href="#">NumPy</a>
+                </div>
+                <div id="ThreePandas">
+                    <a href="#">Pandas</a>
+                </div>
+                <div id="ThreeSciPy">
+                    <a href="#">SciPy</a>
+                </div>
+                <div id="ThreeASP">
+                    <a href="#">ASP</a>
+                </div>
+                <div id="ThreeAngular">
+                    <a href="#">AngularJS</a>
+                </div>
+                <div id="ThreeAppML">
+                    <a href="#">AppML</a>
+                </div>
+                <div id="ThreeGo">
+                    <a href="#">Go</a>
+                </div>
+                <div id="ThreeTypeScript">
+                    <a href="#">TypeScript</a>
+                </div>
+                <div id="ThreeDjango">
+                    <a href="#">Django</a>
+                </div>
+                <div id="ThreeMongoDB">
+                    <a href="#">MongoDB</a>
+                </div>
+                <div id="ThreeStatistics">
+                    <a href="#">Statistics</a>
+                </div>
+                <div id="ThreeDataScience">
+                    <a href="#">Data Science</a>
+                </div>
+                <div id="ThreeTypingSpeed">
+                    <a href="#">Typing Speed</a>
+                </div>
+                <div id="ThreeHowTo">
+                    <a href="#">HowTo</a>
+                </div>
+                <div id="ThreeCodeGame">
+                    <a href="#">Code Game</a>
+                </div>
+                <div id="ThreeSpaces">
+                    <a href="#">Spaces</a>
+                </div>
+                <div id="ThreePostgreSQL">
+                    <a href="#">PostgreSQL</a>
+                </div>
+            </div>
+            <div id="ThreeSecLing-End">
+                <div>
+                    <div id="ThreeExcel">
+                        <a href="#">Excel</a>
+                    </div>
+                    <div id="ThreeGoogleSheets">
+                        <a href="#">Google Sheets</a>
+                    </div>
+                </div>
+                <div>
+                    <div id="ThreeMachineLearning">
+                        <a href="#">Machine Learning</a>
+                    </div>
+                    <div id="ThreeAI">
+                        <a href="#">Artificial Intelligence</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="secEditor">
+        <h1>Code Editor</h1>
+        <p>
+            With our online code editor, you can edit code and view the result in your browser
+        </p>
+        <div id="ImgEditor">
+            <div id="HeaderImgEditor">
+                <div >
+                    <div id="balls">
+                        <div style="background-color: #ED594A;"></div>
+                        <div style="background-color: #FDD800;"></div>
+                        <div style="background-color: #5AC05A;"></div>
+                    </div>
+                    <p>
+                        www.w3schools.com/tryit/
+                    </p>
+                </div>
+                <div id="frontBack">
+                    <p>Frontend</p>
+                    <p>Backend</p>
+                </div>
+            </div>
+            <img src="arquivos/imagens/codeeditor.gif" alt="gif-editor">
+        </div>
+        <a href="#" id="FrontendEditor">
+            Try Frontend Editor (HTML/CSS/JS)
+        </a>
+        <a href="#" id="BackendEditor">
+            Try Backend Editor (Python/PHP/Java/C..)
+        </a>
+    </section>
+    <section id="secSpaces">
+        <h1>W3Schools Spaces</h1>
+        <p>
+            If you want to create your own website, check out <a href="#">W3Schools Spaces</a>.
+        </p>
+        <p>
+            It is free to use, and does not require any setup:
+        </p>
+        <img src="arquivos/imagens/dynamicspaces.gif" alt="spaces-gif">
+        <a href="#" id="aLearnMore">Learn More</a>
+    </section>
+    <section id="MyLearning">
+        <h1>My Learning</h1>
+        <p>
+            Track your progress with our free "My Learning" program.
+        </p>
+        <p>
+            Log in to your account, and start earning points!
+        </p>
+        <img src="arquivos/imagens/myl-green-off.png" alt="learning-img">
+        <a href="#">Sign Up for Free</a>
+    </section>
+    <section id="SectionPRO">
+        <h1>
+            Torne-se um usuário PRO
+        </h1>
+        <p>
+            E desbloqueie recursos poderosos:
+        </p>
+        <div>
+            <p>
+                <i class="material-icons">check_circle</i>
+                Navegue pelo W3Schools sem anúncios
+            </p>
+            <p>
+                <i class="material-icons">check_circle</i>
+                Hospedagem de sites (inclui <a href="#">Spaces</a> PRO)
+            </p>
+            <p>
+                <i class="material-icons">check_circle</i>
+                Acesso ao nosso <a href="#">tutorial em vídeo HTML</a>
+            </p>
+        </div>
+        <a href="#" id="SectionPROa">Saber mais</a>
+    </section>
+    <section id="secColorPicker">
+        <h1>Seletor de cores</h1>
+        <p>Famoso seletor de cores do W3Schools:</p>
+        <img src="arquivos/imagens/colorpicker.png" alt="colorpicker">
+        <a href="#" id="divHoverPicker"><!--Hover--></a>
+    </section>
+    <section id="secJogoDeCod">
+        <h1>Jogo de código</h1>
+        <p>Ajude o Lince a coletar pinhas!</p>
+        <img src="arquivos/imagens/w3lynx_200.png" alt="w3lynx">
+        <a href="#" id="divHoverJogo"><!--Hover--></a>
+        <a id="aJogoDeCod" href="#">Jogar um Jogo</a>
+    </section>
+    <section id="secExercicios">
+        <h1>Exercícios e questionários</h1>
+        <p>Teste suas habilidades!</p>
+        <div id="divExercicios">
+            <a id="aExer1" href="#">Exercícios</a>
+            <a id="aExer2" href="#">Testes</a>
+        </div>
+    </section>
+    <section id="secModelos">
+        <h1>Modelos da Web</h1>
+        <p>Navegue pela nossa seleção de modelos HTML responsivos <strong>gratuitos</strong></p>
+        <img src="arquivos/imagens/w3css_templates.jpg" alt="w3css_templates">
+        <a href="#">Procure modelos</a>
+    </section>
+    <section id="secPontape">
+        <h1>Dê o pontapé inicial na sua carreira</h1>
+        <p>Obtenha a certificação concluindo um curso</p>
+        <a href="#">iniciar</a>
+    </section>
+    <section id="secComoFazer">
+        <h1>Como fazer a seção</h1>
+        <p>Trechos de código para HTML, CSS e JavaScript</p>
+        <p id="pComoFazer">Por exemplo, como criar uma apresentação de slides:</p>
+        <div id="monitorComoFazer">
+            <div id="HeaderMonitor">
+                <div>
+                    <div id="balls">
+                        <div style="background-color: #ED594A;"></div>
+                        <div style="background-color: #FDD800;"></div>
+                        <div style="background-color: #5AC05A;"></div>
+                    </div>
+                    <p>
+                        www.w3schools.com/tryit/
+                    </p>
+                </div>
+            </div>
+            <div id="BordaMonitor">
+                <div class="slider">
+                    <div class="slider-content">
+                        <input type="radio" name="btn-radio" id="radio1">
+                        <input type="radio" name="btn-radio" id="radio2">
+                        <input type="radio" name="btn-radio" id="radio3">
+                        <div class="slide-box primeiro">
+                            <img class="img-desktop" src="arquivos/imagens/img_nature_wide.jpg" alt="slide 1">
+                        </div>
+                        <div class="slide-box">
+                            <img class="img-desktop" src="arquivos/imagens/img_mountains_wide.jpg" alt="slide 2">
+                        </div>
+                        <div class="slide-box">
+                            <img class="img-desktop" src="arquivos/imagens/img_snow_wide.jpg" alt="slide 3">
+                        </div>
+                        <div class="nav-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                        </div>
+                        <div class="nav-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="hasteMonitor">
+                    <!-- Somente Estilo -->
+                </div>
+                <div id="baseMonitor">
+                    <a href="#">Aprender como</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div id="FooterSectOne">
+                <ul>
+                    <li><a href="#">LOGO(icone)</a></li>
+                    <li><a href="#">SPACES</a></li>
+                    <li><a href="#">UPGRADE</a></li>
+                    <li><a href="#">AD-FREE</a></li>
+                    <li><a href="#">NEWSLETTER</a></li>
+                    <li><a href="#">GET CERTIFIED</a></li>
+                    <li><a href="#">REPORT ERROR</a></li>
+                </ul>
+            </div>
+            <div id="FooterTopicos">
+                <div>
+                    <ul>
+                        <h3>Top Tutorials</h3>
+                        <li><a href="#">HTML Tutorial</a></li>
+                        <li><a href="#">CSS Tutorial</a></li>
+                        <li><a href="#">JavaScript Tutorial</a></li>
+                        <li><a href="#">How To Tutorial</a></li>
+                        <li><a href="#">SQL Tutorial</a></li>
+                        <li><a href="#">Python Tutorial</a></li>
+                        <li><a href="#">W3.CSS Tutorial</a></li>
+                        <li><a href="#">Bootstrap Tutorial</a></li>
+                        <li><a href="#">PHP Tutorial</a></li>
+                        <li><a href="#">Java Tutorial</a></li>
+                        <li><a href="#">C++ Tutorial</a></li>
+                        <li><a href="#">jQuery Tutorial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h3>Top References</h3>
+                        <li><a href="#">HTML Reference</a></li>
+                        <li><a href="#">CSS Reference</a></li>
+                        <li><a href="#">JavaScript Reference</a></li>
+                        <li><a href="#">SQL Reference</a></li>
+                        <li><a href="#">Python Reference</a></li>
+                        <li><a href="#">W3.CSS Reference</a></li>
+                        <li><a href="#">Bootstrap Reference</a></li>
+                        <li><a href="#">PHP Reference</a></li>
+                        <li><a href="#">HTML Colors</a></li>
+                        <li><a href="#">Java Reference</a></li>
+                        <li><a href="#">Angular Reference</a></li>
+                        <li><a href="#">jQuery Reference</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h3>Top Examples</h3>
+                        <li><a href="#">HTML Examples</a></li>
+                        <li><a href="#">CSS Examples</a></li>
+                        <li><a href="#">JavaScript Examples</a></li>
+                        <li><a href="#">How To Examples</a></li>
+                        <li><a href="#">SQL Examples</a></li>
+                        <li><a href="#">Python Examples</a></li>
+                        <li><a href="#">W3.CSS Examples</a></li>
+                        <li><a href="#">Bootstrap Examples</a></li>
+                        <li><a href="#">PHP Examples</a></li>
+                        <li><a href="#">Java Examples</a></li>
+                        <li><a href="#">XML Examples</a></li>
+                        <li><a href="#">jQuery Examples</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h3>
+                            <a href="#">
+                                Get Certified
+                            </a>
+                        </h3>
+                        <li><a href="#">HTML Certificate</a></li>
+                        <li><a href="#">CSS Certificate</a></li>
+                        <li><a href="#">JavaScript Certificate</a></li>
+                        <li><a href="#">Front End Certificate</a></li>
+                        <li><a href="#">SQL Certificate</a></li>
+                        <li><a href="#">Python Certificate</a></li>
+                        <li><a href="#">PHP Certificate</a></li>
+                        <li><a href="#">jQuery Certificate</a></li>
+                        <li><a href="#">Java Certificate</a></li>
+                        <li><a href="#">C++ Certificate</a></li>
+                        <li><a href="#">C# Certificate</a></li>
+                        <li><a href="#">XML Certificate</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="FooterFim">
+                <div id="FooterRedes">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="arquivos/imagens/" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="arquivos/imagens/" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="arquivos/imagens/" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="arquivos/imagens/" alt="">
+                            </a>
+                        </li>
+                        <li><a href="#">FORUM</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning.
+                        Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness
+                        of all content. While using W3Schools, you agree to have read and accepted our <a href="#">terms of use, cookie and privacy policy</a>.
+                    </p>
+                    <p>
+                        <a href="#">Copyright 1999-2024</a> by Refsnes Data. All Rights Reserved. <a href="#">W3Schools is Powered by W3.CSS</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="FooterImgFundo">
+            <!-- Imagem nas CSS -->
+        </div>
+    </footer>
+    <script src="arquivos/script.js"></script>
+</body>
+</html>
