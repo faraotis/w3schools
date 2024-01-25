@@ -24,6 +24,14 @@
 }
 
 @media screen and (min-width: 993px) {
+    .divLimit {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 985px;
+    }
+
     .divLingCode {
         min-width: 470px;
         height: fit-content;

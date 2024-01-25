@@ -184,6 +184,7 @@ header a {
     padding: 10px;
     border: 1px dashed red;
     width: 90%;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -339,7 +340,6 @@ header a {
 /* divCODEs */
 .divLingCode {
     display: none;
-
     background-color: var(--cinzaFundoCode);
     font-weight: normal;
     padding: 30px 30px 5px 30px;
