@@ -493,57 +493,62 @@
         </div>
     </div>
     <section id="secEditor">
-        <h1>Code Editor</h1>
-        <p>
-            With our online code editor, you can edit code and view the result in your browser
-        </p>
-        <div id="ImgEditor">
-            <div id="HeaderImgEditor">
-                <div >
-                    <div id="balls">
-                        <div style="background-color: #ED594A;"></div>
-                        <div style="background-color: #FDD800;"></div>
-                        <div style="background-color: #5AC05A;"></div>
+        <div>
+            <h1>Editor de código</h1>
+            <p>
+                Com nosso editor de código online, você pode editar o código e visualizar o resultado em seu navegador
+            </p>
+            <div id="ImgEditor">
+                <div id="HeaderImgEditor">
+                    <div >
+                        <div id="balls">
+                            <div style="background-color: #ED594A;"></div>
+                            <div style="background-color: #FDD800;"></div>
+                            <div style="background-color: #5AC05A;"></div>
+                        </div>
+                        <p>
+                            www.w3schools.com/tryit/
+                        </p>
                     </div>
-                    <p>
-                        www.w3schools.com/tryit/
-                    </p>
+                    <div id="frontBack">
+                        <p>Frontend</p>
+                        <p>Backend</p>
+                    </div>
                 </div>
-                <div id="frontBack">
-                    <p>Frontend</p>
-                    <p>Backend</p>
-                </div>
+                <img src="arquivos/imagens/codeeditor.gif" alt="gif-editor">
             </div>
-            <img src="arquivos/imagens/codeeditor.gif" alt="gif-editor">
+            <a href="#" id="FrontendEditor">
+                Experimente o Editor Frontend (HTML/CSS/JS)
+            </a>
+            <a href="#" id="BackendEditor">
+                Experimente o Editor Backend (Python/PHP/Java/C..)
+            </a>
         </div>
-        <a href="#" id="FrontendEditor">
-            Try Frontend Editor (HTML/CSS/JS)
-        </a>
-        <a href="#" id="BackendEditor">
-            Try Backend Editor (Python/PHP/Java/C..)
-        </a>
     </section>
     <section id="secSpaces">
-        <h1>W3Schools Spaces</h1>
+        <h1>Espaços W3Schools</h1>
         <p>
-            If you want to create your own website, check out <a href="#">W3Schools Spaces</a>.
+            Se você deseja criar seu próprio site, dê uma olhada no <a href="#">W3Schools Spaces</a>.
         </p>
         <p>
-            It is free to use, and does not require any setup:
+            O uso é gratuito e não requer nenhuma configuração:
         </p>
         <img src="arquivos/imagens/dynamicspaces.gif" alt="spaces-gif">
-        <a href="#" id="aLearnMore">Learn More</a>
+        <div id="how-spaces-works">
+            <img src="arquivos/imagens/how-spaces-works3.png" alt="how-spaces-works">
+        </div>
+        <a href="#" id="aSaberMais">Saber mais</a>
     </section>
     <section id="MyLearning">
-        <h1>My Learning</h1>
+        <h1>Meu aprendizado</h1>
         <p>
-            Track your progress with our free "My Learning" program.
+            Acompanhe seu progresso com nosso programa gratuito "My Learning".
         </p>
         <p>
-            Log in to your account, and start earning points!
+            Faça login em sua conta e comece a ganhar pontos!
         </p>
         <img src="arquivos/imagens/myl-green-off.png" alt="learning-img">
-        <a href="#">Sign Up for Free</a>
+        <a href="#">Inscreva-se gratuitamente</a>
     </section>
     <section id="SectionPRO">
         <h1>
@@ -582,11 +587,13 @@
         <a id="aJogoDeCod" href="#">Jogar um Jogo</a>
     </section>
     <section id="secExercicios">
-        <h1>Exercícios e questionários</h1>
-        <p>Teste suas habilidades!</p>
-        <div id="divExercicios">
-            <a id="aExer1" href="#">Exercícios</a>
-            <a id="aExer2" href="#">Testes</a>
+        <div>
+            <h1>Exercícios e questionários</h1>
+            <p>Teste suas habilidades!</p>
+            <div id="divExercicios">
+                <a id="aExer1" href="#">Exercícios</a>
+                <a id="aExer2" href="#">Testes</a>
+            </div>
         </div>
     </section>
     <section id="secModelos">
@@ -659,7 +666,12 @@
         <div>
             <div id="FooterSectOne">
                 <ul>
-                    <li><a href="#">LOGO(icone)</a></li>
+                    <li><a href="#">
+                        <div id="logo-footer-div">
+                            <img id="logo-footer" src="arquivos/imagens/logo-w3schools-footer.png" alt="logo-w3schools">
+                            <img id="logo-footer-hover" src="arquivos/imagens/logo-w3schools-footer-hover.png" alt="logo-w3schools">
+                        </div>
+                    </a></li>
                     <li><a href="#">SPACES</a></li>
                     <li><a href="#">UPGRADE</a></li>
                     <li><a href="#">AD-FREE</a></li>
@@ -747,26 +759,38 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <img src="arquivos/imagens/" alt="">
+                                <div class="div-redes-logo">
+                                    <img class="logo-footer-redes facebook" src="arquivos/imagens/logo-facebook.png" alt="">
+                                    <img class="logo-footer-redes" id="facebook" src="arquivos/imagens/logo-facebook-hover.png" alt="">
+                                </div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="arquivos/imagens/" alt="">
+                                <div class="div-redes-logo">
+                                    <img class="logo-footer-redes discord" src="arquivos/imagens/logo-discord.png" alt="">
+                                    <img class="logo-footer-redes" id="discord" src="arquivos/imagens/logo-discord-hover.png" alt="">
+                                </div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="arquivos/imagens/" alt="">
+                                <div class="div-redes-logo">
+                                    <img class="logo-footer-redes linkedin" src="arquivos/imagens/logo-linkedin.png" alt="">
+                                    <img class="logo-footer-redes" id="linkedin" src="arquivos/imagens/logo-linkedin-hover.png" alt="">
+                                </div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="arquivos/imagens/" alt="">
+                                <div class="div-redes-logo">
+                                    <img class="logo-footer-redes instagram" src="arquivos/imagens/logo-instagram.png" alt="">
+                                    <img class="logo-footer-redes" id="instagram" src="arquivos/imagens/logo-instagram-hover.png" alt="">
+                                </div>
                             </a>
                         </li>
-                        <li><a href="#">FORUM</a></li>
-                        <li><a href="#">ABOUT</a></li>
+                        <li id="liAfooter"><a href="#">FORUM</a></li>
+                        <li id="liAfooter"><a href="#">ABOUT</a></li>
                     </ul>
                 </div>
                 <div>

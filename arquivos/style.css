@@ -625,6 +625,10 @@ header a {
     text-align: left;
 }
 
+#FrontendEditor, #BackendEditor {
+    display: block;
+}
+
 #FrontendEditor {
     background-color: var(--verdeEscuro);
     color: white;
@@ -675,7 +679,12 @@ header a {
     width: 100%;
 }
 
-#aLearnMore, #MyLearning a, #SectionPROa {
+#how-spaces-works {
+    margin-top: 60px;
+    display: none;
+}
+
+#aSaberMais, #MyLearning a, #SectionPROa {
     background-color: var(--verdeEscuro);
     color: white;
     font-weight: bold;
@@ -687,7 +696,7 @@ header a {
     border-radius: 50px;
 }
 
-#aLearnMore:hover, #MyLearning a:hover, #SectionPROa:hover {
+#aSaberMais:hover, #MyLearning a:hover, #SectionPROa:hover {
     background-color: var(--verdeHover);
 }
 
@@ -841,12 +850,17 @@ header a {
     gap: 30px;
 }
 
+#divExercicios {
+    margin: 20px auto 0px auto;
+}
+
 #secExercicios h1, #secComoFazer h1 {
     font-size: 4em;
     line-height: 1.5em;
 }
 
 #divExercicios {
+    max-width: 1200px;
     display: flex;
     flex-flow: nowrap column;
     gap: 30px;
@@ -1043,7 +1057,7 @@ header a {
 /* Footer */
 footer {
     background: var(--AzulFundo) url('imagens/background_in_space.gif') repeat scroll;
-    color: white;
+    color: var(--brancoCinza);
     text-align: center;
 }
 
@@ -1072,6 +1086,37 @@ footer ul {
     text-decoration: underline;
 }
 
+/*
+logos hover
+*/
+#logo-footer-div img {
+    margin: auto;
+    width: fit-content;
+}
+
+#logo-footer:hover, .facebook:hover, .discord:hover, .linkedin:hover, .instagram:hover, #logo-footer-hover, #facebook, #discord, #linkedin, #instagram {
+    display: none;
+}
+
+#logo-footer:hover ~ #logo-footer-hover {
+    display: block;
+    margin-bottom: 19px;
+}
+
+.facebook:hover ~ #facebook, .discord:hover ~ #discord, .linkedin:hover ~ #linkedin, .instagram:hover ~ #instagram {
+    display: block;
+}
+
+.div-redes-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.div-redes-logo > img {
+    height: 20px;
+}
+/**/
+
 #FooterTopicos {
     font-weight: bold;
     font-size: 0.9em;
@@ -1089,7 +1134,7 @@ footer ul {
 
 #FooterTopicos a {
     text-decoration: none;
-    color: white;
+    color: var(--brancoCinza);
 }
 
 #FooterTopicos a:hover {
@@ -1114,18 +1159,28 @@ footer ul {
 #FooterFim p {
     font-size: 0.7em;
     margin-top: 15px;
+    line-height: 1.3em;
 }
 
 #FooterFim a {
-    color: white;
+    color: var(--brancoCinza);
+    text-decoration: none;
+    align-items: center;
 }
 
 #FooterFim a:hover {
     color: var(--Yellow);
+    text-decoration: underline;
+}
+
+#liAfooter {
+    align-items: end;
+    display: flex;
 }
 
 #FooterImgFundo {
-    height: 350px;
+    height: 425px;
+    margin-top: -110px;
     background: transparent url('imagens/lynx_landing.png') no-repeat center bottom scroll;
-    background-size: cover;
+    background-size: contain;
 }

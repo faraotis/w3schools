@@ -10,6 +10,28 @@
         grid-template-columns: auto auto;
         gap: 3vw;
     }
+
+    #secEditor a {
+        width: fit-content;
+    }
+
+    #ImgEditor, #secEditor > div, #secSpaces img, #MyLearning img {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    #divExercicios {
+        flex-direction: row;
+    }
+
+    #secModelos a {
+        margin: auto;
+        width: 60vw;
+    }
+
+    #secPontape a {
+        width: 170px;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -91,6 +113,15 @@
 
     #ThreeSecLing-End > div > div {
         width: 100%;
+    }
+
+    #how-spaces-works {
+        display: block;
+    }
+
+    #secModelos img {
+        max-width: 930px;
+        margin: auto;
     }
 
     /* slide */
