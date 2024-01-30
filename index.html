@@ -352,7 +352,6 @@
                 </div>
             </div>
         </div>
-        <div id="aqui"><!-- Demarcador de Desenvolvimento --></div>
         <div id="ThreeSecLing">
             <div id="ThreeSecLing-Top">
                 <div id="ThreeC">
@@ -596,6 +595,7 @@
             </div>
         </div>
     </section>
+    <div id="aqui"><!-- Demarcador de Desenvolvimento --></div>
     <section id="secModelos">
         <h1>Modelos da Web</h1>
         <p>Navegue pela nossa seleção de modelos HTML responsivos <strong>gratuitos</strong></p>
@@ -603,9 +603,11 @@
         <a href="#">Procure modelos</a>
     </section>
     <section id="secPontape">
-        <h1>Dê o pontapé inicial na sua carreira</h1>
-        <p>Obtenha a certificação concluindo um curso</p>
-        <a href="#">iniciar</a>
+        <div>
+            <h1>Dê o pontapé inicial na sua carreira</h1>
+            <p>Obtenha a certificação concluindo um curso</p>
+            <a href="#">iniciar</a>
+        </div>
     </section>
     <section id="secComoFazer">
         <h1>Como fazer a seção</h1>
@@ -625,31 +627,23 @@
                 </div>
             </div>
             <div id="BordaMonitor">
-                <div class="slider">
-                    <div class="slider-content">
-                        <input type="radio" name="btn-radio" id="radio1">
-                        <input type="radio" name="btn-radio" id="radio2">
-                        <input type="radio" name="btn-radio" id="radio3">
-                        <div class="slide-box primeiro">
-                            <img class="img-desktop" src="arquivos/imagens/img_nature_wide.jpg" alt="slide 1">
-                        </div>
-                        <div class="slide-box">
-                            <img class="img-desktop" src="arquivos/imagens/img_mountains_wide.jpg" alt="slide 2">
-                        </div>
-                        <div class="slide-box">
-                            <img class="img-desktop" src="arquivos/imagens/img_snow_wide.jpg" alt="slide 3">
-                        </div>
-                        <div class="nav-auto">
-                            <div class="auto-btn1"></div>
-                            <div class="auto-btn2"></div>
-                            <div class="auto-btn3"></div>
-                        </div>
-                        <div class="nav-manual">
-                            <label for="radio1" class="manual-btn"></label>
-                            <label for="radio2" class="manual-btn"></label>
-                            <label for="radio3" class="manual-btn"></label>
-                        </div>
+                <div id="img-content">
+                    <img class="imgSlide primeiro" src="arquivos/imagens/slide1.jpg" alt="">
+                    <img class="imgSlide" src="arquivos/imagens/slide2.jpg" alt="">
+                    <img class="imgSlide" src="arquivos/imagens/slide3.jpg" alt="">
+                </div>
+                <div id="passarSetas" style="display: none;">
+                    <div id="setaLeft" onclick="setaL()">
+                        <i class="material-icons">arrow_back_ios</i>
                     </div>
+                    <div id="setaRight" onclick="setaR()">
+                        <i class="material-icons">arrow_forward_ios</i>
+                    </div>
+                </div>
+                <div id="passarButtons">
+                    <div id="btn1" onclick="btn1()"></div>
+                    <div id="btn2" onclick="btn2()"></div>
+                    <div id="btn3" onclick="btn3()"></div>
                 </div>
             </div>
             <div>
@@ -806,7 +800,9 @@
             </div>
         </div>
         <div id="FooterImgFundo">
-            <!-- Imagem nas CSS -->
+            <div>
+                <!-- Imagem nas CSS -->
+            </div>
         </div>
     </footer>
     <script src="arquivos/script.js"></script>

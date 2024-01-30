@@ -124,8 +124,56 @@
         margin: auto;
     }
 
-    /* slide */
-    .nav-manual, .nav-auto {
-        margin-top: 60%;
+    #secPontape > div {
+        margin: auto;
+        text-align: left;
+        max-width: 1100px;
+    }
+
+    #secPontape p {
+        margin: 90px 0px 80px 0px;
+    }
+
+    #secComoFazer {
+        max-width: 994px;
+        margin: auto;
+    }
+
+    /* footer */
+    footer > div {
+        max-width: 975px;
+        margin: auto;
+    }
+
+    #FooterSectOne > ul {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8em;
+    }
+    
+    #FooterTopicos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        font-size: 0.7em;
+        line-height: 1.3em;
+    }
+
+    #FooterFim {
+        text-align: left;
+        max-width: 620px;
+    }
+
+    #FooterRedes {
+        display: flex;
+    }
+
+    #FooterImgFundo {
+        max-width: 100%;
+        margin-top: -210px;
+        overflow: hidden;
+        background-position: right bottom;
     }
 }

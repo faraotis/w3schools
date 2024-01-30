@@ -928,6 +928,8 @@ header a {
 }
 
 #secPontape a {
+    display: block;
+    text-align: center;
     padding: 22px 0px;
     background-color: var(--verdeEscuro);
 }
@@ -955,7 +957,7 @@ header a {
 
 #BordaMonitor {
     background-color: var(--bordaMonitor);
-    padding: 5px 5px 80px 5px;
+    padding: 7px 7px 50px 7px;
 }
 
 #hasteMonitor {
@@ -972,86 +974,50 @@ header a {
     padding: 20px 0px;
 }
 
-/* SLIDE */
-.slider {
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    padding: 0 !important;
+/* slide */
+#img-content {
+    display: flex;
     overflow: hidden;
 }
 
-.slider-content {
-    width: 400%;
-    height: auto;
-    display: flex;
-}
-
-.slider-content input {
-    display: none;
-}
-
-.slide-box {
-    width: 25%;
-    height: auto;
-    position: relative;
-    text-align: center;
-    transition: 1s;
-}
-
-.slide-box img {
+#BordaMonitor img {
     width: 100%;
 }
 
-.nav-auto {
-    margin: 36% 0px 0px -15px;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-manual {
-    opacity: 0%;
-    margin: 36% 0px 0px -15px;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-manual .manual-btn, .nav-auto div {
-    border: 1px solid transparent;
-    background-color: lightgray;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+#passarSetas > div, #passarButtons > div {
     cursor: pointer;
-    transition: 0.2s;
 }
 
-.nav-manual .manual-btn:hover {
-    background-color: gray;
+#passarSetas {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+    color: white;
+    transform: translate(0px, -300%);
 }
 
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+#passarButtons {
+    margin: 20px auto 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#passarButtons div {
+    padding: 7px;
+    border-radius: 50%;
+    background-color: #aeaeae;
+}
+
+#passarButtons #btn1 {
+    background-color: #595959;
+}
+
+#passarButtons div:not(:last-child) {
     margin-right: 10px;
 }
 
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3 {
-    background-color: gray;
-}
-
-#radio1:checked ~ .primeiro {
-    margin-left: 0%;
-}
-
-#radio2:checked ~ .primeiro {
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .primeiro {
-    margin-left: -50%;
+#passarButtons div:hover {
+    background-color: #595959;
 }
 
 /* Footer */
@@ -1180,7 +1146,6 @@ logos hover
 
 #FooterImgFundo {
     height: 425px;
-    margin-top: -110px;
-    background: transparent url('imagens/lynx_landing.png') no-repeat center bottom scroll;
+    background: var(--AzulFundo) url('imagens/lynx_landing.png') no-repeat center bottom scroll;
     background-size: contain;
 }
