@@ -14,7 +14,7 @@
     <div id="headerAll">
         <header>
             <a href="#">
-                <img src="arquivos/imagens/logo-w3schools.png" alt="logo-w3schools">
+                <img id="logoHeader" src="arquivos/imagens/logo-header-claro.png" alt="logo-w3schools">
             </a>
             <div class="ItensHeader" id="menu">
                 <div>Menu</div>
@@ -44,7 +44,7 @@
                     </i>
                 </label>
             </div>
-            <div id="mudar-tema">
+            <div id="mudar-tema" onclick="mudarTema()">
                 <!--conteudo nas CSS-->
             </div>
             <div class="topicsHeader">
@@ -172,7 +172,7 @@
                                 <span class="spanAzul">&lt;</span><span class="spanMarrom">head</span><span class="spanAzul">&gt;</span>
                             </span><br>
                             <span>
-                                <span class="spanAzul">&lt;</span><span class="spanMarrom">title</span><span class="spanAzul">&gt;</span>HTML Tutorial<span class="spanAzul">&lt;</span>/<span class="spanMarrom">title</span>&gt;</span><br>
+                                <span class="spanAzul">&lt;</span><span class="spanMarrom">title</span><span class="spanAzul">&gt;</span>HTML Tutorial<span class="spanAzul">&lt;</span><span class="spanMarrom">/title</span><span class="spanAzul">&gt;</span></span><br>
                             <span>
                                 <span class="spanAzul">&lt;</span><span class="spanMarrom">/head</span><span class="spanAzul">&gt;</span>
                             </span><br>
@@ -232,7 +232,7 @@
             <div class="divLing" id="divJs">
                 <div class="divLimit">
                     <div class="divLingPrinc">
-                        <h1>JavaScript</h1>
+                        <h1 style="font-size: 5em;">JavaScript</h1>
                         <p>
                             A linguagem para programar páginas da web
                         </p>
@@ -595,7 +595,6 @@
             </div>
         </div>
     </section>
-    <div id="aqui"><!-- Demarcador de Desenvolvimento --></div>
     <section id="secModelos">
         <h1>Modelos da Web</h1>
         <p>Navegue pela nossa seleção de modelos HTML responsivos <strong>gratuitos</strong></p>
@@ -610,48 +609,50 @@
         </div>
     </section>
     <section id="secComoFazer">
-        <h1>Como fazer a seção</h1>
-        <p>Trechos de código para HTML, CSS e JavaScript</p>
-        <p id="pComoFazer">Por exemplo, como criar uma apresentação de slides:</p>
-        <div id="monitorComoFazer">
-            <div id="HeaderMonitor">
+        <div id="comoFazerDiv">
+            <h1>Como fazer a seção</h1>
+            <p>Trechos de código para HTML, CSS e JavaScript</p>
+            <p id="pComoFazer">Por exemplo, como criar uma apresentação de slides:</p>
+            <div id="monitorComoFazer">
+                <div id="HeaderMonitor">
+                    <div>
+                        <div id="balls">
+                            <div style="background-color: #ED594A;"></div>
+                            <div style="background-color: #FDD800;"></div>
+                            <div style="background-color: #5AC05A;"></div>
+                        </div>
+                        <p>
+                            www.w3schools.com/tryit/
+                        </p>
+                    </div>
+                </div>
+                <div id="BordaMonitor">
+                    <div id="img-content">
+                        <img class="imgSlide primeiro" src="arquivos/imagens/img_nature_wide.jpg" alt="">
+                        <img class="imgSlide" src="arquivos/imagens/img_snow_wide.jpg" alt="">
+                        <img class="imgSlide" src="arquivos/imagens/img_mountains_wide.jpg" alt="">
+                    </div>
+                    <div id="passarSetas" style="display: none;">
+                        <div id="setaLeft" onclick="setaL()">
+                            <i class="material-icons">arrow_back_ios</i>
+                        </div>
+                        <div id="setaRight" onclick="setaR()">
+                            <i class="material-icons">arrow_forward_ios</i>
+                        </div>
+                    </div>
+                    <div id="passarButtons">
+                        <div id="btn1" onclick="btn1()"></div>
+                        <div id="btn2" onclick="btn2()"></div>
+                        <div id="btn3" onclick="btn3()"></div>
+                    </div>
+                </div>
                 <div>
-                    <div id="balls">
-                        <div style="background-color: #ED594A;"></div>
-                        <div style="background-color: #FDD800;"></div>
-                        <div style="background-color: #5AC05A;"></div>
+                    <div id="hasteMonitor">
+                        <!-- Somente Estilo -->
                     </div>
-                    <p>
-                        www.w3schools.com/tryit/
-                    </p>
-                </div>
-            </div>
-            <div id="BordaMonitor">
-                <div id="img-content">
-                    <img class="imgSlide primeiro" src="arquivos/imagens/img_nature_wide.jpg" alt="">
-                    <img class="imgSlide" src="arquivos/imagens/img_snow_wide.jpg" alt="">
-                    <img class="imgSlide" src="arquivos/imagens/img_mountains_wide.jpg" alt="">
-                </div>
-                <div id="passarSetas" style="display: none;">
-                    <div id="setaLeft" onclick="setaL()">
-                        <i class="material-icons">arrow_back_ios</i>
+                    <div id="baseMonitor">
+                        <a href="#">Aprender como</a>
                     </div>
-                    <div id="setaRight" onclick="setaR()">
-                        <i class="material-icons">arrow_forward_ios</i>
-                    </div>
-                </div>
-                <div id="passarButtons">
-                    <div id="btn1" onclick="btn1()"></div>
-                    <div id="btn2" onclick="btn2()"></div>
-                    <div id="btn3" onclick="btn3()"></div>
-                </div>
-            </div>
-            <div>
-                <div id="hasteMonitor">
-                    <!-- Somente Estilo -->
-                </div>
-                <div id="baseMonitor">
-                    <a href="#">Aprender como</a>
                 </div>
             </div>
         </div>
