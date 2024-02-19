@@ -297,6 +297,11 @@ header a {
     padding: 80px 0px;
 }
 
+.divLingPrinc h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
 #divHtml {
     background-color: var(--verdeClaro);
 }
