@@ -10,6 +10,25 @@ loginHover.addEventListener("mouseout", function() {
     logarHover.style.backgroundColor = '#D9EEE1'
 })
 
+//=============  MENU  =============
+let menubox = document.querySelector('#menu')
+let menuitens = document.querySelector('#SectionMenuItens')
+let menucont = 1
+
+function openMenu() {
+    menucont += 1
+    if(menucont % 2 == 0) {
+        menuitens.style.display = 'block'
+    } if(menucont % 2 != 0) {
+        menuitens.style.display = 'none'
+    }
+}
+
+function closeMenu() {
+    menucont = 1
+    menuitens.style.display = 'none'
+}
+
 //=============  TEMA  =============
 //Cores TemaEscuro
 var LaranjaTags = '#f99990'

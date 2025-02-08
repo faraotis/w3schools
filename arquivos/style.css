@@ -172,6 +172,83 @@ header a {
     background-color: black;
 }
 
+/* MENU */
+
+#SectionMenuItens {
+    display: none;
+    height: 100vh;
+    background-color: var(--AzulFundo);
+    color: white;
+    padding: 10px 0px 90px 0px;
+}
+
+#SectionMenuItens i {
+    font-size: 2em;
+}
+
+.menuItensclass:hover {
+    background-color: white;
+    color: black;
+}
+
+.menuItensclass > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 32px;
+    border-bottom: 1px solid var(--gray);
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+#menu-close-icon {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: right;
+}
+
+#menu-close-icon > div {
+    width: fit-content;
+    padding: 15px 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#menu-close-icon > div:hover {
+    background-color: white;
+    color: black;
+}
+
+/*
+#menu-tutorials {
+
+} #menu-exercises {
+
+} #menu-certificates {
+
+} #menu-services {
+
+} #menu-spaces {
+
+} #menu-get {
+
+} #menu-plus {
+
+} #menu-academy {
+
+}
+*/
+
+.iconemenor {
+    font-size: 1em;
+}
+
+#menu-icons-redes {
+    display: flex;
+    padding: 100px 0px 0px 32px;
+    gap: 20px;
+}
+
 /*AVISO UNOFFICIAL*/
 #aviso-unofficial {
     background-color: var(--AzulFundo);
