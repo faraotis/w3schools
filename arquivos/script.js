@@ -12,7 +12,7 @@ loginHover.addEventListener("mouseout", function() {
 
 //=============  MENU  =============
 let menubox = document.querySelector('#menu')
-let menuitens = document.querySelector('#SectionMenuItens')
+let menuitens = document.querySelector('#MenuItens')
 let menucont = 1
 
 function openMenu() {
